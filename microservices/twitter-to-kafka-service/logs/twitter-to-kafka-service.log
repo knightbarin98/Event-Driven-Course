@@ -1,0 +1,6 @@
+2023-07-25 21:08:24 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.2 on mrbarin with PID 16348 (/home/mrbarin/Documents/Event-Driven-Course/microservices/twitter-to-kafka-service/target/classes started by mrbarin in /home/mrbarin/Documents/Event-Driven-Course/microservices)
+2023-07-25 21:08:24 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-25 21:08:24 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.564 seconds (JVM running for 0.89)
+2023-07-25 21:08:24 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplication - Application initializing ...
+2023-07-25 21:08:24 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplication - [-Java -Microservices -Spring -Kafka -Elasticsearch]
+2023-07-25 21:08:24 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
