@@ -1,12 +1,12 @@
-2023-07-25 22:21:05 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
-2023-07-25 22:21:05 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-07-25 22:21:05 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-07-25 22:21:05 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest
+2023-07-25 22:21:05 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2023-07-25 22:21:05 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-07-25 22:21:05 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-25 22:21:05 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication for test class service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest
 2023-07-25 22:21:05 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 2023-07-25 22:21:05 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@663411de, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@63dd899, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59d2400d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33b1c5c5, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b202a3a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@10b9db7b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@9ef8eb7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34cdeda2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ee660fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@305a0c5f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4535b6d5]
 2023-07-25 22:21:05 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 11.0.19 on mrbarin with PID 24708 (started by mrbarin in /home/mrbarin/Documents/Event-Driven-Course/microservices/twitter-to-kafka-service)
 2023-07-25 22:21:05 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to 1 default profile: "default"
-2023-07-25 22:21:06 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mrbarin.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-07-25 22:21:06 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'runner.service.kafka.to.twitter.com.mrbarin.demo.config.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2023-07-25 22:21:06 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
@@ -18,16 +18,16 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 1 of constructor in com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.mrbarin.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
+Parameter 1 of constructor in service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication required a bean of type 'runner.service.kafka.to.twitter.com.mrbarin.demo.config.StreamRunner' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.mrbarin.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
+Consider defining a bean of type 'runner.service.kafka.to.twitter.com.mrbarin.demo.config.StreamRunner' in your configuration.
 
 2023-07-25 22:21:06 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 11.0.19 on mrbarin with PID 24708 (started by mrbarin in /home/mrbarin/Documents/Event-Driven-Course/microservices/twitter-to-kafka-service)
 2023-07-25 22:21:06 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to 1 default profile: "default"
-2023-07-25 22:21:06 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mrbarin.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-07-25 22:21:06 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'runner.service.kafka.to.twitter.com.mrbarin.demo.config.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2023-07-25 22:21:06 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
@@ -39,14 +39,14 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 1 of constructor in com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.mrbarin.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
+Parameter 1 of constructor in service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication required a bean of type 'runner.service.kafka.to.twitter.com.mrbarin.demo.config.StreamRunner' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.mrbarin.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
+Consider defining a bean of type 'runner.service.kafka.to.twitter.com.mrbarin.demo.config.StreamRunner' in your configuration.
 
-2023-07-25 22:21:06 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043] to prepare test instance [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest@174e1b69]
+2023-07-25 22:21:06 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043] to prepare test instance [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest@174e1b69]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -117,7 +117,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mrbarin.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'runner.service.kafka.to.twitter.com.mrbarin.demo.config.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
 	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
@@ -138,17 +138,17 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
 	... 68 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mrbarin.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'runner.service.kafka.to.twitter.com.mrbarin.demo.config.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
 	... 86 common frames omitted
-2023-07-25 22:21:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
-2023-07-25 22:21:46 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-07-25 22:21:46 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-07-25 22:21:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest
+2023-07-25 22:21:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2023-07-25 22:21:46 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-07-25 22:21:46 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-25 22:21:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication for test class service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest
 2023-07-25 22:21:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 2023-07-25 22:21:46 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@663411de, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@63dd899, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59d2400d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33b1c5c5, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b202a3a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@10b9db7b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@9ef8eb7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34cdeda2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ee660fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@305a0c5f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4535b6d5]
 2023-07-25 22:21:47 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 11.0.19 on mrbarin with PID 24834 (started by mrbarin in /home/mrbarin/Documents/Event-Driven-Course/microservices/twitter-to-kafka-service)
@@ -239,9 +239,9 @@ java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 73 common frames omitted
 2023-07-25 22:21:47 [main] INFO  c.m.t.t.k.s.r.TwitterKafkaStreamRunner - Closing twitter stream
@@ -332,13 +332,13 @@ java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 72 common frames omitted
 2023-07-25 22:21:47 [main] INFO  c.m.t.t.k.s.r.TwitterKafkaStreamRunner - Closing twitter stream
-2023-07-25 22:21:47 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043] to prepare test instance [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest@7be3a9ce]
+2023-07-25 22:21:47 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043] to prepare test instance [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest@7be3a9ce]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -420,15 +420,15 @@ Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 73 common frames omitted
-2023-07-25 22:22:39 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
-2023-07-25 22:22:39 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-07-25 22:22:39 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-07-25 22:22:39 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest
+2023-07-25 22:22:39 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2023-07-25 22:22:39 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-07-25 22:22:39 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-25 22:22:39 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication for test class service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest
 2023-07-25 22:22:39 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 2023-07-25 22:22:39 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@663411de, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@63dd899, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59d2400d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33b1c5c5, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b202a3a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@10b9db7b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@9ef8eb7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34cdeda2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ee660fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@305a0c5f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4535b6d5]
 2023-07-25 22:22:40 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 11.0.19 on mrbarin with PID 24969 (started by mrbarin in /home/mrbarin/Documents/Event-Driven-Course/microservices/twitter-to-kafka-service)
@@ -519,9 +519,9 @@ java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 73 common frames omitted
 2023-07-25 22:22:40 [main] INFO  c.m.t.t.k.s.r.TwitterKafkaStreamRunner - Closing twitter stream
@@ -612,13 +612,13 @@ java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 72 common frames omitted
 2023-07-25 22:22:40 [main] INFO  c.m.t.t.k.s.r.TwitterKafkaStreamRunner - Closing twitter stream
-2023-07-25 22:22:40 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043] to prepare test instance [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest@285f38f6]
+2023-07-25 22:22:40 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043] to prepare test instance [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest@285f38f6]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -700,15 +700,15 @@ Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 73 common frames omitted
-2023-07-25 22:23:41 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
-2023-07-25 22:23:41 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-07-25 22:23:41 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-07-25 22:23:41 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest
+2023-07-25 22:23:41 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2023-07-25 22:23:41 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-07-25 22:23:41 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-25 22:23:41 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication for test class service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest
 2023-07-25 22:23:41 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
 2023-07-25 22:23:41 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@663411de, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@63dd899, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59d2400d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33b1c5c5, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b202a3a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@10b9db7b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@9ef8eb7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34cdeda2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ee660fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@305a0c5f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4535b6d5]
 2023-07-25 22:23:42 [main] INFO  c.m.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest using Java 11.0.19 on mrbarin with PID 25113 (started by mrbarin in /home/mrbarin/Documents/Event-Driven-Course/microservices/twitter-to-kafka-service)
@@ -799,9 +799,9 @@ java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 73 common frames omitted
 2023-07-25 22:23:42 [main] INFO  c.m.t.t.k.s.r.TwitterKafkaStreamRunner - Closing twitter stream
@@ -892,13 +892,13 @@ java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 72 common frames omitted
 2023-07-25 22:23:42 [main] INFO  c.m.t.t.k.s.r.TwitterKafkaStreamRunner - Closing twitter stream
-2023-07-25 22:23:42 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043] to prepare test instance [com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest@65753040]
+2023-07-25 22:23:42 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@75cd8043] to prepare test instance [service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplicationTest@65753040]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -980,8 +980,8 @@ Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
 Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
 	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
 	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
-	at com.mrbarin.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
-	at com.mrbarin.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:47)
+	at impl.runner.service.kafka.to.twitter.com.mrbarin.demo.config.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at service.kafka.to.twitter.com.mrbarin.demo.config.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:48)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
 	... 73 common frames omitted
