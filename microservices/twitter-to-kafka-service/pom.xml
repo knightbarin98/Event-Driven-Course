@@ -16,7 +16,6 @@
         <dependency>
             <groupId>com.mrbarin</groupId>
             <artifactId>app-config-data</artifactId>
-            <version>${project.version}</version>
         </dependency>
 
         <dependency>
