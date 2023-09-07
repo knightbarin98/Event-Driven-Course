@@ -109,7 +109,7 @@ public class KafkaAdminClient {
 
     private void checkMaxRetry(int retry, Integer maxRetry) {
         if(retry > maxRetry){
-            throw new KafkaClientException("Reached max number of retry for reading kafka topics"!);
+            throw new KafkaClientException("Reached max number of retry for reading kafka topics!");
         }
     }
 
