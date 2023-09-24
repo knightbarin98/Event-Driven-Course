@@ -5,6 +5,13 @@ spring:
     config:
       server:
         git:
-          uri: file://home/mrbarin/Documents/Event-Driven-Course/microservices/config-server-repository
+          uri: https://github.com/knightbarin98/spring-cloud-config-server-repostiroy.git
+          default-label: main
+          username: knightbarin98
+          password: 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
           clone-on-start: true
     fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
