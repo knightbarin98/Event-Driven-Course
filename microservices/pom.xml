@@ -86,6 +86,7 @@
         <kafka-avro-serializer.version>7.4.0</kafka-avro-serializer.version>
         <spring-cloud.version>2021.0.7</spring-cloud.version>
         <spring-cloud-config.version>3.1.7</spring-cloud-config.version>
+        <jasypt-spring-boot-starter.version>3.0.5</jasypt-spring-boot-starter.version>
     </properties>
 
     <repositories>
@@ -265,6 +266,12 @@
                         <artifactId>swagger-core</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt-spring-boot-starter.version}</version>
             </dependency>
 
         </dependencies>

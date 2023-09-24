@@ -14,4 +14,7 @@ spring:
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: ENC(OtG1VsTXc8Qs+gxaS7dFFEOLxLSTnQFPiw4Fj3MN4z0idY/5g/XiSFfNHWNixQU0yKcrZv4lNy0hnXu4dNd0Rg==)
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}
