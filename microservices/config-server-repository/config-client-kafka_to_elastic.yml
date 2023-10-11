@@ -17,7 +17,7 @@ kafka-consumer-config:
   specific-avro-reader-key: specific.avro.reader
   specific-avro-reader: true
   batch-listener: true
-  auto-startup: false
+  auto-startup: true
   concurrency-level: 3 #nummber of max threds: ex 1 topic -> 4 partitions -> 4 threads
   session-timeout-ms: 10000
   heartbeatIntervalMs: 3000
