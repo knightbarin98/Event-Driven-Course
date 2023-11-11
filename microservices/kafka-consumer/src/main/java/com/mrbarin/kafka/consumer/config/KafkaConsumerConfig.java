@@ -61,7 +61,7 @@ public class KafkaConsumerConfig<K extends Serializable, V extends SpecificRecor
         ConcurrentKafkaListenerContainerFactory<K,V> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
         factory.setBatchListener(kafkaConsumerConfigData.getBatchListener());
-        factory.setConcurrency(kafkaConsumerConfigData.getConcurrencyLevel()); //spring boot will create that much threads to consume data
+        factory.setConcurrency(kafkaConsumerConfigData.getConcurrencyLevel()); //spring boot will create that many threads to consume data
         factory.setAutoStartup(kafkaConsumerConfigData.getAutoStartup());
         factory.getContainerProperties().setPollTimeout(kafkaConsumerConfigData.getPollTimeoutMs());
         return factory;

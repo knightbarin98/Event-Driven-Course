@@ -26,7 +26,7 @@ public class TwitterKafkaProducer implements KafkaProducer<Long, TwitterAvroMode
     @PreDestroy
     public void close(){
         if(kafkaTemplate != null){
-            LOG.info("Cloasing kafka producer!");
+            LOG.info("Closing kafka producer!");
             kafkaTemplate.destroy();
         }
     }
