@@ -1,6 +1,9 @@
+<<<<<<< HEAD
+=======
 server:
   port: 8181
 
+>>>>>>> master
 twitter-to-kafka-service:
   twitter-keywords:
     - Java
