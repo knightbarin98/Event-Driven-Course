@@ -6,5 +6,5 @@ import java.io.Serializable;
 import java.util.List;
 
 public interface KafkaConsumer <K extends Serializable, V extends SpecificRecordBase> {
-    public void receive(List<K> messages, List<Integer> keys, List<Integer> partitions, List<Long> offsets);
+    public void receive(List<V> messages, List<Integer> keys, List<Integer> partitions, List<Long> offsets);
 }

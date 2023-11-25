@@ -67,6 +67,21 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.mrbarin</groupId>
+            <artifactId>elastic-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mrbarin</groupId>
+            <artifactId>elastic-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mrbarin</groupId>
+            <artifactId>elastic-index-client</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

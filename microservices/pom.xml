@@ -141,6 +141,24 @@
                 <version>${project.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.mrbarin</groupId>
+                <artifactId>elastic-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mrbarin</groupId>
+                <artifactId>elastic-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mrbarin</groupId>
+                <artifactId>elastic-index-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!--Spring-->
 
             <dependency>
